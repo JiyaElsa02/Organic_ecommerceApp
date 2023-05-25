@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:organic_ecommerce_app/pages/login_page.dart';
 
+import 'package:organic_ecommerce_app/home/main_food_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -15,6 +16,12 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: LoginPage(),
+      title: 'Flutter Demo',
+      theme: ThemeData(
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        useMaterial3: true,
+      ),
+      home: FoodPage(),
     );
   }
 }
