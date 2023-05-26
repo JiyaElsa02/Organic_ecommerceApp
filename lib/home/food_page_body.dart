@@ -16,7 +16,7 @@ class _FoodPageBodyState extends State<FoodPageBody> {
   Widget build(BuildContext context) {
     return Container(
       height: 300,
-      color: Color(0xFF69c5df),
+      color: Color.fromARGB(255, 187, 197, 200),
       child: PageView.builder(
           itemCount: 6,
           controller: pagecontroller,
@@ -31,7 +31,7 @@ class _FoodPageBodyState extends State<FoodPageBody> {
       children: [
         Container(
           height: 220,
-          margin: EdgeInsets.only(left: 5, right: 5),
+          margin: EdgeInsets.only(left: 10, right: 10),
           decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(30),
               color: index.isEven
@@ -57,7 +57,7 @@ class _FoodPageBodyState extends State<FoodPageBody> {
                   children: [
                     BigText(text: "Garden1"),
                     SizedBox(
-                      height: 10,
+                      height: 5,
                     ),
                     Row(
                       children: [
@@ -88,7 +88,7 @@ class _FoodPageBodyState extends State<FoodPageBody> {
                       ],
                     ),
                     SizedBox(
-                      height: 20,
+                      height: 10,
                     ),
                     Row(
                       children: [
