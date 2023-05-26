@@ -36,7 +36,7 @@ class _FoodPageBodyState extends State<FoodPageBody> {
                   // : Color.fromARGB(255, 117, 52, 135),
                   : Color(0xFF69c5df),
               image: DecorationImage(
-                  fit: BoxFit.cover, image: AssetImage("lib/images/veg.jpg"))),
+                  fit: BoxFit.cover, image: AssetImage("lib/images/veg2.jpg"))),
         ),
         Align(
           alignment: Alignment.bottomCenter,

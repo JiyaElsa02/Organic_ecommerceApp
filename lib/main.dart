@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:organic_ecommerce_app/pages/login_page.dart';
-
 import 'package:organic_ecommerce_app/home/main_food_page.dart';
 
 void main() {
@@ -22,6 +21,7 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
       home: FoodPage(),
+      // home: HeadBar(),
     );
   }
 }
