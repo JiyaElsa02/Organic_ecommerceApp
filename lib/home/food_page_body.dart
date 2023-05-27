@@ -16,7 +16,7 @@ class _FoodPageBodyState extends State<FoodPageBody> {
   Widget build(BuildContext context) {
     return Container(
       height: 300,
-      color: Color.fromARGB(255, 187, 197, 200),
+      // color: Color.fromARGB(255, 187, 197, 200),
       child: PageView.builder(
           itemCount: 6,
           controller: pagecontroller,

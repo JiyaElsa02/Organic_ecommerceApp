@@ -1,3 +1,4 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:organic_ecommerce_app/home/food_page_body.dart';
 
@@ -8,15 +9,36 @@ class FoodPage extends StatefulWidget {
   State<FoodPage> createState() => _FoodPageState();
 }
 
+void signUserOut() {
+  FirebaseAuth.instance.signOut();
+}
+
 class _FoodPageState extends State<FoodPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        centerTitle: false,
+        backgroundColor: Color.fromARGB(255, 76, 175, 80),
+        title: new Padding(
+          padding: const EdgeInsets.only(left: 20.0),
+          child: new Text(
+            "Nirav",
+            style: TextStyle(fontSize: 32),
+          ),
+        ),
+        actions: [
+          IconButton(
+            onPressed: signUserOut,
+            icon: Icon(Icons.logout),
+          )
+        ],
+      ),
       body: Column(
         children: [
           Container(
             child: Container(
-              margin: EdgeInsets.only(top: 45, bottom: 15),
+              margin: EdgeInsets.only(top: 10, bottom: 15),
               padding: EdgeInsets.only(left: 20, right: 20),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -26,7 +48,7 @@ class _FoodPageState extends State<FoodPage> {
                       Text(
                         'Kerala',
                         style: TextStyle(
-                          color: Colors.green,
+                          color: Color.fromARGB(255, 76, 175, 80),
                           fontSize: 25,
                         ),
                       ),
@@ -48,17 +70,20 @@ class _FoodPageState extends State<FoodPage> {
                     ],
                   ), // Column
 
-                  Container(
-                    width: 45,
-                    height: 45,
-                    child: Icon(
-                      Icons.search,
+                  Padding(
+                    padding: const EdgeInsets.only(left: 120),
+                    child: Container(
+                      width: 45,
+                      height: 45,
+                      child: Icon(
+                        Icons.search,
+                      ),
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(15),
+                        color: Color.fromARGB(255, 119, 207, 122),
+                      ), // BoxDecoration
                     ),
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(15),
-                      color: Color.fromARGB(255, 119, 207, 122),
-                    ), // BoxDecoration
-                  ) // Container
+                  ), // Container
                 ],
                 // FoodPageBody(),
               ),
