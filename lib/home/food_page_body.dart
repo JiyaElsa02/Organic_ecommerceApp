@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:organic_ecommerce_app/home/big_text.dart';
+import 'package:organic_ecommerce_app/home/dimensions.dart';
 import 'package:organic_ecommerce_app/home/icon_widgets.dart';
 
 class FoodPageBody extends StatefulWidget {
@@ -14,15 +15,136 @@ class _FoodPageBodyState extends State<FoodPageBody> {
   PageController pagecontroller = PageController(viewportFraction: .8);
   @override
   Widget build(BuildContext context) {
-    return Container(
-      height: 300,
-      // color: Color.fromARGB(255, 187, 197, 200),
-      child: PageView.builder(
-          itemCount: 6,
-          controller: pagecontroller,
-          itemBuilder: (context, position) {
-            return _buildPageItem(position);
-          }),
+    return Column(
+      children: [
+        Container(
+          height: 320,
+          // color: Color.fromARGB(255, 187, 197, 200),
+          child: PageView.builder(
+              itemCount: 6,
+              controller: pagecontroller,
+              itemBuilder: (context, position) {
+                return _buildPageItem(position);
+              }),
+        ),
+        //popular food
+        SizedBox(
+          height: 10,
+        ),
+        Container(
+          margin: EdgeInsets.only(left: 20),
+          child: Row(
+            crossAxisAlignment: CrossAxisAlignment.end,
+            children: [
+              BigText(text: "Popular"),
+              SizedBox(
+                width: 10,
+              ),
+              Container(
+                margin: const EdgeInsets.only(bottom: 3),
+                child: BigText(text: ".", color: Colors.black26),
+              ),
+              SizedBox(
+                width: 10,
+              ),
+              Container(
+                margin: const EdgeInsets.only(bottom: 2),
+                child: Text(
+                  "Vegetable pairing",
+                ),
+              ),
+            ],
+          ),
+        ),
+        //List of vegetables and images
+        Container(
+          height: 320, // Remove this line
+          child: SingleChildScrollView(
+            // Wrap with SingleChildScrollView
+            child: ListView.builder(
+              shrinkWrap: true, // Add shrinkWrap property
+              physics: NeverScrollableScrollPhysics(),
+              itemCount: 10,
+              itemBuilder: (context, index) {
+                return Container(
+                  margin:
+                      EdgeInsets.only(top: 10, left: 28, right: 20, bottom: 10),
+                  child: Row(
+                    children: [
+                      Container(
+                        width: 120,
+                        height: 120,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(20),
+                          color: Colors.white38,
+                          image: DecorationImage(
+                            image: AssetImage("lib/images/veg2.jpg"),
+                          ),
+                        ),
+                      ),
+                      //text container
+                      Expanded(
+                        child: Padding(
+                          padding: EdgeInsets.only(left: 10, right: 10),
+                          child: Container(
+                            height: 100,
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.only(
+                                topRight: Radius.circular(20),
+                                bottomRight: Radius.circular(20),
+                              ),
+                              color: Colors.white10,
+                            ),
+                            // child: Padding(
+                            //
+                            //   padding: EdgeInsets.all(.5),
+
+                            // CrossAxisAlignment crossAxisAlignment = CrossAxisAlignment.start,
+                            child: Column(
+                              // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+
+                              children: [
+                                // tyle: TextStyle(fontSize: 20)
+                                Text(
+                                  'Organic Tomatoes',
+                                  style: TextStyle(
+                                    fontSize: 20,
+                                  ),
+                                ),
+                                Text(
+                                  "bvhvcgsfmkhfkhdeou organic organicorganic organic",
+                                ),
+                                Row(
+                                  children: [
+                                    IconWidget(
+                                        icon: Icons.place,
+                                        text: "1.0km",
+                                        color: Colors.black38,
+                                        iconColor: Colors.green),
+                                    SizedBox(
+                                      width: 20,
+                                    ),
+                                    IconWidget(
+                                        icon: Icons.timer,
+                                        text: "30 Mins",
+                                        color: Colors.black38,
+                                        iconColor: Colors.red),
+                                  ],
+                                )
+                              ],
+                            ),
+                          ),
+                        ),
+                      ),
+                      // ),
+                    ],
+                  ),
+                );
+              },
+            ),
+          ),
+        )
+      ],
     );
   }
 
@@ -92,21 +214,27 @@ class _FoodPageBodyState extends State<FoodPageBody> {
                     ),
                     Row(
                       children: [
+                        // IconWidget(
+                        //     icon: Icons.circle_sharp,
+                        //     text: "ssss",
+                        //     color: Colors.black38,
+                        //     iconColor: Colors.orange),
+                        // SizedBox(
+                        //   width: 20,
+                        // ),
                         IconWidget(
-                            icon: Icons.circle_sharp,
+                            icon: Icons.place,
+                            text: "1.4km",
+                            color: Colors.black38,
+                            iconColor: Colors.green),
+                        SizedBox(
+                          width: 20,
+                        ),
+                        IconWidget(
+                            icon: Icons.timer,
                             text: "ssss",
                             color: Colors.black38,
-                            iconColor: Colors.orange),
-                        IconWidget(
-                            icon: Icons.circle_sharp,
-                            text: "ssss",
-                            color: Colors.black38,
-                            iconColor: Colors.orange),
-                        IconWidget(
-                            icon: Icons.circle_sharp,
-                            text: "ssss",
-                            color: Colors.black38,
-                            iconColor: Colors.orange),
+                            iconColor: Colors.red),
                       ],
                     )
                   ],
