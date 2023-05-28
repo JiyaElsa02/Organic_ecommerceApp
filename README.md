@@ -29,13 +29,20 @@ To run and test:
 
 
 The below images are to demonstarte the working:
-
-![signup](https://github.com/JiyaElsa02/Organic_ecommerceApp/assets/86199374/a1862ff5-f79a-4abe-a0f6-16f217c64aba)
-
-
-
-![home1](https://github.com/JiyaElsa02/Organic_ecommerceApp/assets/86199374/34b09fea-c01e-4de6-a436-040f3a624039)
+<img width="323" alt="Screenshot 2023-05-28 at 4 35 18 PM" src="https://github.com/JiyaElsa02/Organic_ecommerceApp/assets/99739280/81d60392-768c-4863-ab35-1b8da6f24298">
 
 
 
-![desc](https://github.com/JiyaElsa02/Organic_ecommerceApp/assets/86199374/aed97bf4-2388-4ecc-8a6f-9a27f19b6f57)
+
+<img width="326" alt="Screenshot 2023-05-28 at 4 33 32 PM" src="https://github.com/JiyaElsa02/Organic_ecommerceApp/assets/99739280/d8a1d526-0aa4-4df7-9690-05fb61bb5f68">
+
+
+
+
+
+<img width="318" alt="Screenshot 2023-05-28 at 4 28 13 PM" src="https://github.com/JiyaElsa02/Organic_ecommerceApp/assets/99739280/78329f69-bf25-481b-bd74-15b93c734177">
+
+
+
+
+
