@@ -30,8 +30,8 @@ To run and test:
 
 The below images are to demonstarte the working:
 <img width="323" alt="Screenshot 2023-05-28 at 4 35 18 PM" src="https://github.com/JiyaElsa02/Organic_ecommerceApp/assets/99739280/81d60392-768c-4863-ab35-1b8da6f24298">
-
-
+ 
+ 
 
 
 
@@ -39,12 +39,9 @@ The below images are to demonstarte the working:
 <img width="326" alt="Screenshot 2023-05-28 at 4 33 32 PM" src="https://github.com/JiyaElsa02/Organic_ecommerceApp/assets/99739280/d8a1d526-0aa4-4df7-9690-05fb61bb5f68">
 
 
-
-
-
-
-
-
+   
+      
+      
 
 
 <img width="318" alt="Screenshot 2023-05-28 at 4 28 13 PM" src="https://github.com/JiyaElsa02/Organic_ecommerceApp/assets/99739280/78329f69-bf25-481b-bd74-15b93c734177">
