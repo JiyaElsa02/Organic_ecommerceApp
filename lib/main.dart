@@ -4,6 +4,7 @@ import 'package:organic_ecommerce_app/home/main_food_page.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:organic_ecommerce_app/pages/auth_page.dart';
 import 'firebase_options.dart';
+import 'home/Popular_food.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -21,14 +22,14 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: AuthPage(),
+      // home: AuthPage(),
       // home: LoginPage(),
       // title: 'Flutter Demo',
       // theme: ThemeData(
       //   colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       //   useMaterial3: true,
       // ),
-      // home: FoodPage(),
+      home: PopularFood(),
       // home: HeadBar(),
     );
   }
