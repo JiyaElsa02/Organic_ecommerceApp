@@ -1,6 +1,6 @@
 # Organic_Ecommerce_App  - NIRAV
 
-'Nirav' is an e-commerce app designed to revolutionize the way they sell their organic food products, facilitate pre-orders for cultivation of organic vegetables, and foster collaboration among farmers to fulfill large orders.
+'Nirav' is an e-commerce app designed to revolutionize the way the small-scale subsistence farmers sell their organic food products, facilitate pre-orders for cultivation of organic vegetables, and foster collaboration among farmers to fulfill large orders.
 The app serves as a platform to connect the farmers with potential buyers, who are actively seeking organic, locally sourced food products.
 
 
@@ -13,6 +13,7 @@ Future Scopes:
 * A pre-order system,which ensures that the farmers have a guaranteed market for their produce
 * A feature which allows farmers to form small groups or cooperatives within the app. These groups can come together to fulfill large orders from restaurants,or other bulk buyers
 * To include a messaging system that facilitates communication between farmers, buyers, and within farmer groups
+* A feature to find potential investors and also for investors to find potential farmers.
 
 
 Stacks Used:
