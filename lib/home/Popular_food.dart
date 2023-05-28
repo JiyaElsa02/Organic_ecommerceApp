@@ -24,7 +24,7 @@ class PopularFood extends StatelessWidget {
             decoration: BoxDecoration(
               image: DecorationImage(
                 fit: BoxFit.cover,
-                image: AssetImage("lib/images/veg2.jpg"),
+                image: AssetImage("lib/images/garden.jpeg"),
               ),
             ),
           ),

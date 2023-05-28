@@ -29,7 +29,7 @@ class _FoodPageBodyState extends State<FoodPageBody> {
         ),
         //popular food
         SizedBox(
-          height: 10,
+          height: 8,
         ),
         Container(
           margin: EdgeInsets.only(left: 20),
@@ -48,7 +48,7 @@ class _FoodPageBodyState extends State<FoodPageBody> {
                 width: 10,
               ),
               Container(
-                margin: const EdgeInsets.only(bottom: 2),
+                margin: const EdgeInsets.only(bottom: 4),
                 child: Text(
                   "Vegetable pairing",
                 ),
@@ -58,7 +58,7 @@ class _FoodPageBodyState extends State<FoodPageBody> {
         ),
         //List of vegetables and images
         Container(
-          height: 320, // Remove this line
+          height: 300, // Remove this line
           child: SingleChildScrollView(
             // Wrap with SingleChildScrollView
             child: ListView.builder(
@@ -85,7 +85,7 @@ class _FoodPageBodyState extends State<FoodPageBody> {
                       //text container
                       Expanded(
                         child: Padding(
-                          padding: EdgeInsets.only(left: 10, right: 10),
+                          padding: EdgeInsets.only(left: 20, right: 10),
                           child: Container(
                             height: 100,
                             decoration: BoxDecoration(
@@ -101,7 +101,7 @@ class _FoodPageBodyState extends State<FoodPageBody> {
 
                             // CrossAxisAlignment crossAxisAlignment = CrossAxisAlignment.start,
                             child: Column(
-                              // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                              // mainAxisAlignment: MainAxisAlignment.start,
 
                               children: [
                                 // tyle: TextStyle(fontSize: 20)
@@ -110,13 +110,17 @@ class _FoodPageBodyState extends State<FoodPageBody> {
                                   style: TextStyle(
                                     fontSize: 20,
                                   ),
-
                                 ),
-                                SizedBox(height: 5,),
+                                SizedBox(
+                                  height: 5,
+                                ),
                                 Text(
-                                  "organic organicorganic organic",style: TextStyle(fontSize: 10),
+                                  "organic organicorganic organic",
+                                  style: TextStyle(fontSize: 10),
                                 ),
-                                SizedBox(height: 10,),
+                                SizedBox(
+                                  height: 7,
+                                ),
                                 Row(
                                   children: [
                                     IconWidget(
@@ -125,7 +129,7 @@ class _FoodPageBodyState extends State<FoodPageBody> {
                                         color: Colors.black38,
                                         iconColor: Colors.yellow),
                                     SizedBox(
-                                      width: 20,
+                                      width: 5,
                                     ),
                                     IconWidget(
                                         icon: Icons.place,
@@ -133,15 +137,23 @@ class _FoodPageBodyState extends State<FoodPageBody> {
                                         color: Colors.black38,
                                         iconColor: Colors.green),
                                     SizedBox(
-                                      width: 20,
+                                      height: 5,
                                     ),
-                                    IconWidget(
+
+                                     ],
+                                ),
+
+                                    Row(
+                                      children: [
+                                         IconWidget(
                                         icon: Icons.timer,
                                         text: "30 Mins",
                                         color: Colors.black38,
                                         iconColor: Colors.red),
-                                  ],
-                                )
+                                      ],
+                                    )
+                                   
+                                 
                               ],
                             ),
                           ),
@@ -172,13 +184,13 @@ class _FoodPageBodyState extends State<FoodPageBody> {
                   // : Color.fromARGB(255, 117, 52, 135),
                   : Color(0xFF69c5df),
               image: DecorationImage(
-                  fit: BoxFit.cover, image: AssetImage("lib/images/veg2.jpg"))),
+                  fit: BoxFit.cover, image: AssetImage("lib/images/garden.jpeg"))),
         ),
         Align(
             alignment: Alignment.bottomCenter,
             child: Container(
               height: 120,
-              margin: EdgeInsets.only(left: 40, right: 40, bottom: 20),
+              margin: EdgeInsets.only(left: 30, right: 30, bottom: 20),
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(30),
                 color: Color.fromRGBO(247, 239, 239, 1),
@@ -239,15 +251,15 @@ class _FoodPageBodyState extends State<FoodPageBody> {
                             color: Colors.black38,
                             iconColor: Colors.yellow),
                         SizedBox(
-                          width: 20,
+                          width: 2,
                         ),
                         IconWidget(
                             icon: Icons.place,
-                            text: "1.4km",
+                            text: "1km",
                             color: Colors.black38,
                             iconColor: Colors.green),
                         SizedBox(
-                          width: 20,
+                          width: 2,
                         ),
                         IconWidget(
                             icon: Icons.timer,

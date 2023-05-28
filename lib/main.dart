@@ -22,14 +22,14 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      // home: AuthPage(),
+      home: AuthPage(),
       // home: LoginPage(),
       // title: 'Flutter Demo',
       // theme: ThemeData(
       //   colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       //   useMaterial3: true,
       // ),
-      home: PopularFood(),
+      // home: PopularFood(),
       // home: HeadBar(),
     );
   }
